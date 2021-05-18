@@ -1,1 +1,1 @@
-# Capstone2_PV_Pricing
+# Analysis of PV panel data using the Data Science Method.
