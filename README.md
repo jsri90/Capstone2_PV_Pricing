@@ -1,1 +1,2 @@
-# Analysis of PV panel data using the Data Science Method.
+# Is Solar Energy a good long term bet?
+
