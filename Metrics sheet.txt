@@ -1,0 +1,95 @@
+Model Metrics file
+
+Data Set features: 
+
+Year - The year of installation
+System Size in kW - DC system size of the installation in kW
+New Construction - Dummy Variable indicating if the system installation is a new construction or an upgrade of an existing installation
+Ground Mounted - Dummy Variable indicating if the system is installed on the ground or the rooftop
+State - Location of the installation in the United State. States covered are CA, MA, NH, FL
+Installer Name - Name of the Solar system installer
+DC  Optimizer - A device that helps improve efficiency of the system. This feature is a dummy variable indicating if the system has a DC Optimizer or not.
+Dollar per watt - The dependent variable that is of interest in this problem. Calculated values are in $ / kiloWatt
+Overall Module Efficiency - Numerical value of the overall efficiency of the PV modules being installed
+Micro Inverter - Dummy variable indicating if the installation includes a micro-inverter technology
+Installer experience - Uses the date of installation and Installer name to calculate the total number of systems installed to that date.
+Premium Module - Dummy Variable indicating if the the system uses a Premium Module i.e a module with efficiency >20%.
+
+
+ 
+
+
+Model evaluations
+
+
+Dummy Regressor
+
+R2 Score  = -6.82 * 10 ^(06)
+
+Mean Absolute error = 0.946
+
+Mean Squared error = 2.93
+
+RMSE = 1.712
+
+
+
+Linear Regressor
+
+R2 Score = 0.0418
+
+Mean Absolute Error = 0.888
+
+Mean Squared Error = 2.813
+
+RMSE = 1.678
+
+
+Linear Regressor with Best Features
+
+Hyper - parameter tuned - K
+
+K = 12
+
+R2 Score = 0.044
+
+Mean Absolute Error = 0.8843
+
+RMSE = 1.678
+
+kW2                                           0.419280
+installer_experience                   0.158507
+ground_mounted                       0.056695
+state_MA                    	              -0.003163
+Premium_Module                     -0.008835
+Overall_Module_efficiency       -0.009491
+state_NH                                  -0.011452
+state_FL                                   -0.018623
+new_construction                    -0.049314
+DC_optimizer                           -0.053560
+micro_inverter                          -0.068235
+kW                                           -0.605720
+
+
+
+
+Random Forest Model
+
+Hyper-parameter tuned - N Estimators
+
+Best Estimator = 240
+
+R2 score = 0.128
+
+Mean Absolute Error = 0.79
+
+Root Mean Squared Error = 1.60
+
+
+Feature Importances :
+
+Installer Experience
+Module Efficiency
+kW ^(2)
+kW
+
